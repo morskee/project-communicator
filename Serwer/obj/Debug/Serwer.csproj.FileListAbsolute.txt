@@ -1,0 +1,9 @@
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\bin\Debug\Serwer.exe.config
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\bin\Debug\Serwer.exe
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\bin\Debug\Serwer.pdb
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\obj\Debug\Serwer.csprojResolveAssemblyReference.cache
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\obj\Debug\Serwer.frmSerwer.resources
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\obj\Debug\Serwer.Properties.Resources.resources
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\obj\Debug\Serwer.csproj.GenerateResource.Cache
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\obj\Debug\Serwer.exe
+C:\Users\Morskee\Documents\Visual Studio 2013\Projects\Serwer\obj\Debug\Serwer.pdb
