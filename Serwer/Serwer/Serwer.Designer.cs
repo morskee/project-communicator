@@ -184,12 +184,14 @@ namespace Serwer
             this.informacjeToolStripMenuItem.Name = "informacjeToolStripMenuItem";
             this.informacjeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.informacjeToolStripMenuItem.Text = "Informacje";
+            this.informacjeToolStripMenuItem.Click += new System.EventHandler(this.informacjeToolStripMenuItem_Click);
             // 
             // zakoñczToolStripMenuItem
             // 
             this.zakoñczToolStripMenuItem.Name = "zakoñczToolStripMenuItem";
             this.zakoñczToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.zakoñczToolStripMenuItem.Text = "Zakoñcz";
+            this.zakoñczToolStripMenuItem.Click += new System.EventHandler(this.zakoñczToolStripMenuItem_Click);
             // 
             // frmSerwer
             // 
