@@ -8,3 +8,9 @@ C:\Users\Morskee\Downloads\Serwer\Serwer\obj\Release\Serwer.frmSerwer.resources
 C:\Users\Morskee\Downloads\Serwer\Serwer\obj\Release\Serwer.csproj.GenerateResource.Cache
 C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\obj\Release\Serwer.exe
 C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\obj\Release\Serwer.pdb
+C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\bin\Release\Serwer.exe
+C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\bin\Release\Serwer.pdb
+C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\obj\Release\Serwer.csprojResolveAssemblyReference.cache
+C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\obj\Release\Serwer.Properties.Resources.resources
+C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\obj\Release\Serwer.frmSerwer.resources
+C:\Users\Morskee\Documents\GitHub\project-communicator\Serwer\Serwer\obj\Release\Serwer.csproj.GenerateResource.Cache

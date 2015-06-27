@@ -40,12 +40,17 @@ namespace Serwer
             this.Odbieranie = new System.ComponentModel.BackgroundWorker();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.komunikatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zakoñczToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdSluchaj
             // 
             this.cmdSluchaj.BackColor = System.Drawing.Color.LemonChiffon;
-            this.cmdSluchaj.Location = new System.Drawing.Point(376, 51);
+            this.cmdSluchaj.Location = new System.Drawing.Point(376, 69);
             this.cmdSluchaj.Name = "cmdSluchaj";
             this.cmdSluchaj.Size = new System.Drawing.Size(96, 38);
             this.cmdSluchaj.TabIndex = 19;
@@ -55,7 +60,7 @@ namespace Serwer
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(376, 25);
+            this.txtPort.Location = new System.Drawing.Point(376, 43);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(44, 20);
             this.txtPort.TabIndex = 18;
@@ -64,7 +69,7 @@ namespace Serwer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(373, 9);
+            this.label3.Location = new System.Drawing.Point(373, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 17;
@@ -74,7 +79,7 @@ namespace Serwer
             // 
             this.txtOtrzymywane.BackColor = System.Drawing.SystemColors.Window;
             this.txtOtrzymywane.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtOtrzymywane.Location = new System.Drawing.Point(12, 9);
+            this.txtOtrzymywane.Location = new System.Drawing.Point(12, 27);
             this.txtOtrzymywane.Name = "txtOtrzymywane";
             this.txtOtrzymywane.ReadOnly = true;
             this.txtOtrzymywane.Size = new System.Drawing.Size(355, 243);
@@ -85,7 +90,7 @@ namespace Serwer
             // 
             this.txtLog.BackColor = System.Drawing.Color.White;
             this.txtLog.ForeColor = System.Drawing.Color.Black;
-            this.txtLog.Location = new System.Drawing.Point(376, 108);
+            this.txtLog.Location = new System.Drawing.Point(376, 126);
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
             this.txtLog.Size = new System.Drawing.Size(96, 216);
@@ -96,7 +101,7 @@ namespace Serwer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(373, 92);
+            this.label1.Location = new System.Drawing.Point(373, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 14;
@@ -106,7 +111,7 @@ namespace Serwer
             // 
             this.cmdWyslij.BackColor = System.Drawing.Color.LemonChiffon;
             this.cmdWyslij.Enabled = false;
-            this.cmdWyslij.Location = new System.Drawing.Point(278, 330);
+            this.cmdWyslij.Location = new System.Drawing.Point(278, 348);
             this.cmdWyslij.Name = "cmdWyslij";
             this.cmdWyslij.Size = new System.Drawing.Size(89, 32);
             this.cmdWyslij.TabIndex = 13;
@@ -118,7 +123,7 @@ namespace Serwer
             // 
             this.txtWysylane.BackColor = System.Drawing.Color.White;
             this.txtWysylane.ForeColor = System.Drawing.Color.Black;
-            this.txtWysylane.Location = new System.Drawing.Point(12, 261);
+            this.txtWysylane.Location = new System.Drawing.Point(12, 279);
             this.txtWysylane.Name = "txtWysylane";
             this.txtWysylane.Size = new System.Drawing.Size(355, 63);
             this.txtWysylane.TabIndex = 12;
@@ -137,7 +142,7 @@ namespace Serwer
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(376, 330);
+            this.progressBar1.Location = new System.Drawing.Point(376, 348);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(96, 31);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -146,7 +151,7 @@ namespace Serwer
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.button1.Location = new System.Drawing.Point(182, 330);
+            this.button1.Location = new System.Drawing.Point(182, 348);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 32);
             this.button1.TabIndex = 32;
@@ -154,13 +159,45 @@ namespace Serwer
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Orange;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.komunikatorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(484, 24);
+            this.menuStrip1.TabIndex = 33;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // komunikatorToolStripMenuItem
+            // 
+            this.komunikatorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informacjeToolStripMenuItem,
+            this.zakoñczToolStripMenuItem});
+            this.komunikatorToolStripMenuItem.Name = "komunikatorToolStripMenuItem";
+            this.komunikatorToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.komunikatorToolStripMenuItem.Text = "Komunikator";
+            // 
+            // informacjeToolStripMenuItem
+            // 
+            this.informacjeToolStripMenuItem.Name = "informacjeToolStripMenuItem";
+            this.informacjeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.informacjeToolStripMenuItem.Text = "Informacje";
+            // 
+            // zakoñczToolStripMenuItem
+            // 
+            this.zakoñczToolStripMenuItem.Name = "zakoñczToolStripMenuItem";
+            this.zakoñczToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.zakoñczToolStripMenuItem.Text = "Zakoñcz";
+            // 
             // frmSerwer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Orange;
-            this.ClientSize = new System.Drawing.Size(484, 365);
+            this.ClientSize = new System.Drawing.Size(484, 387);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.cmdSluchaj);
@@ -171,10 +208,14 @@ namespace Serwer
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdWyslij);
             this.Controls.Add(this.txtWysylane);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "frmSerwer";
             this.Text = "Serwer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmSerwer_FormClosed);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +235,10 @@ namespace Serwer
         private System.ComponentModel.BackgroundWorker Odbieranie;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem komunikatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informacjeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zakoñczToolStripMenuItem;
 
     }
 }
