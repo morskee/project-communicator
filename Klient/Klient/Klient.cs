@@ -127,5 +127,16 @@ namespace Klient
             txtOtrzymywane.Text = "";
             txtWysylane.Text = "";
         }
+
+        private void infrormacjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Info Info = new Info();
+            Info.ShowDialog();
+        }
+
+        private void zakoñczToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+        }
     }
 }

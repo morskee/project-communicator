@@ -42,13 +42,18 @@ namespace Klient
             this.Odbieranie = new System.ComponentModel.BackgroundWorker();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.komunikatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infrormacjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zakoñczToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtOtrzymywane
             // 
             this.txtOtrzymywane.BackColor = System.Drawing.SystemColors.Window;
             this.txtOtrzymywane.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtOtrzymywane.Location = new System.Drawing.Point(10, 12);
+            this.txtOtrzymywane.Location = new System.Drawing.Point(12, 30);
             this.txtOtrzymywane.Name = "txtOtrzymywane";
             this.txtOtrzymywane.ReadOnly = true;
             this.txtOtrzymywane.Size = new System.Drawing.Size(355, 243);
@@ -59,7 +64,7 @@ namespace Klient
             // 
             this.txtLog.BackColor = System.Drawing.Color.White;
             this.txtLog.ForeColor = System.Drawing.Color.Black;
-            this.txtLog.Location = new System.Drawing.Point(374, 150);
+            this.txtLog.Location = new System.Drawing.Point(376, 168);
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
             this.txtLog.Size = new System.Drawing.Size(98, 174);
@@ -70,7 +75,7 @@ namespace Klient
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(371, 134);
+            this.label1.Location = new System.Drawing.Point(373, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 22;
@@ -80,7 +85,7 @@ namespace Klient
             // 
             this.cmdWyslij.BackColor = System.Drawing.Color.LemonChiffon;
             this.cmdWyslij.Enabled = false;
-            this.cmdWyslij.Location = new System.Drawing.Point(276, 330);
+            this.cmdWyslij.Location = new System.Drawing.Point(278, 348);
             this.cmdWyslij.Name = "cmdWyslij";
             this.cmdWyslij.Size = new System.Drawing.Size(89, 32);
             this.cmdWyslij.TabIndex = 21;
@@ -92,7 +97,7 @@ namespace Klient
             // 
             this.txtWysylane.BackColor = System.Drawing.Color.White;
             this.txtWysylane.ForeColor = System.Drawing.Color.Black;
-            this.txtWysylane.Location = new System.Drawing.Point(10, 261);
+            this.txtWysylane.Location = new System.Drawing.Point(12, 279);
             this.txtWysylane.Name = "txtWysylane";
             this.txtWysylane.Size = new System.Drawing.Size(355, 63);
             this.txtWysylane.TabIndex = 20;
@@ -102,7 +107,7 @@ namespace Klient
             // cmdPolacz
             // 
             this.cmdPolacz.BackColor = System.Drawing.Color.LemonChiffon;
-            this.cmdPolacz.Location = new System.Drawing.Point(374, 93);
+            this.cmdPolacz.Location = new System.Drawing.Point(376, 111);
             this.cmdPolacz.Name = "cmdPolacz";
             this.cmdPolacz.Size = new System.Drawing.Size(98, 38);
             this.cmdPolacz.TabIndex = 29;
@@ -112,7 +117,7 @@ namespace Klient
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(374, 67);
+            this.txtPort.Location = new System.Drawing.Point(376, 85);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(44, 20);
             this.txtPort.TabIndex = 28;
@@ -121,7 +126,7 @@ namespace Klient
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(371, 51);
+            this.label3.Location = new System.Drawing.Point(373, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 27;
@@ -129,7 +134,7 @@ namespace Klient
             // 
             // txtIP
             // 
-            this.txtIP.Location = new System.Drawing.Point(374, 28);
+            this.txtIP.Location = new System.Drawing.Point(376, 46);
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(98, 20);
             this.txtIP.TabIndex = 26;
@@ -137,7 +142,7 @@ namespace Klient
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(371, 12);
+            this.label2.Location = new System.Drawing.Point(373, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 25;
@@ -155,7 +160,7 @@ namespace Klient
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(374, 331);
+            this.progressBar1.Location = new System.Drawing.Point(376, 349);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(98, 31);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -164,7 +169,7 @@ namespace Klient
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.button1.Location = new System.Drawing.Point(181, 330);
+            this.button1.Location = new System.Drawing.Point(183, 348);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 32);
             this.button1.TabIndex = 33;
@@ -172,13 +177,47 @@ namespace Klient
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Orange;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.komunikatorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(484, 24);
+            this.menuStrip1.TabIndex = 34;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // komunikatorToolStripMenuItem
+            // 
+            this.komunikatorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infrormacjeToolStripMenuItem,
+            this.zakoñczToolStripMenuItem});
+            this.komunikatorToolStripMenuItem.Name = "komunikatorToolStripMenuItem";
+            this.komunikatorToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.komunikatorToolStripMenuItem.Text = "Komunikator";
+            // 
+            // infrormacjeToolStripMenuItem
+            // 
+            this.infrormacjeToolStripMenuItem.Name = "infrormacjeToolStripMenuItem";
+            this.infrormacjeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.infrormacjeToolStripMenuItem.Text = "Infrormacje";
+            this.infrormacjeToolStripMenuItem.Click += new System.EventHandler(this.infrormacjeToolStripMenuItem_Click);
+            // 
+            // zakoñczToolStripMenuItem
+            // 
+            this.zakoñczToolStripMenuItem.Name = "zakoñczToolStripMenuItem";
+            this.zakoñczToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.zakoñczToolStripMenuItem.Text = "Zakoñcz";
+            this.zakoñczToolStripMenuItem.Click += new System.EventHandler(this.zakoñczToolStripMenuItem_Click);
+            // 
             // Klient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Orange;
-            this.ClientSize = new System.Drawing.Size(484, 365);
+            this.ClientSize = new System.Drawing.Size(484, 387);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.cmdPolacz);
@@ -191,10 +230,14 @@ namespace Klient
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdWyslij);
             this.Controls.Add(this.txtWysylane);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Klient";
             this.Text = "Klient";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Klient_FormClosed);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,6 +259,10 @@ namespace Klient
         private System.ComponentModel.BackgroundWorker Odbieranie;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem komunikatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infrormacjeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zakoñczToolStripMenuItem;
     }
 }
 
