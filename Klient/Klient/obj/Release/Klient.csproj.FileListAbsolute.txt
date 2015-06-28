@@ -1,0 +1,8 @@
+C:\Users\Morskee\Downloads\Klient\Klient\obj\Release\Klient.exe
+C:\Users\Morskee\Downloads\Klient\Klient\obj\Release\Klient.pdb
+C:\Users\Morskee\Downloads\Klient\Klient\bin\Release\Klient.exe
+C:\Users\Morskee\Downloads\Klient\Klient\bin\Release\Klient.pdb
+C:\Users\Morskee\Downloads\Klient\Klient\obj\Release\Klient.csprojResolveAssemblyReference.cache
+C:\Users\Morskee\Downloads\Klient\Klient\obj\Release\Klient.Klient.resources
+C:\Users\Morskee\Downloads\Klient\Klient\obj\Release\Klient.Properties.Resources.resources
+C:\Users\Morskee\Downloads\Klient\Klient\obj\Release\Klient.csproj.GenerateResource.Cache
